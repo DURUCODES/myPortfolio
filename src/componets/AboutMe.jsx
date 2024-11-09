@@ -20,7 +20,7 @@ const AboutMe = () => {
 
         <p className="mb-4 text">
           yea so that was about my tech/nerdy side, apart from that, I love to
-          football. I'm also skilled in <strong>Coummincation</strong>
+          play football. I'm also skilled in <strong>Coummincation</strong>
           <strong> Networking, building connections,</strong>
           <strong>Contributing to open Source.</strong> So that's a little
           glimpse of who I am. If you want to know more about me, feel free to

@@ -26,7 +26,7 @@ const ProfileComponet = () => {
           </div>
           <div className="py-2">
             <h1 className="text-2xl font-bold my-2 text-white">
-              Kingsley duru
+              Kingsley Duru
             </h1>
             <span className="px-4 py-1 text-white shadow-xl rounded  bg-gradient-to-br from-[#534d5c] to-[rgba(75,30,133,0.01)]">
               Frontend specialist

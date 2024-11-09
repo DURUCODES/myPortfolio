@@ -1,25 +1,57 @@
-import formimg from "../assets/image/formimg.webp";
-import country from "../assets/image/country.webp";
-import ecom from "../assets/image/ecome.jpg";
+import formimg from "../assets/image/form.png";
+import country from "../assets/image/country.png";
+import ecom from "../assets/image/shop.png";
+import capitalgold1 from "../assets/image/capitalgold1.png";
+import { FaInternetExplorer } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 export const projectApi = [
   {
+    name: "Capital Gold Bank",
+    description:
+      "Capital Gold - Banking UI/UX Application Developed a sleek banking UI/UX application using ReactJS and Tailwind CSS, designed for a seamless user experience. The application features a home page that displays the latest financial news, keeping users informed and engaged. Additionally, it includes an interactive stock chart for cryptocurrency, providing real-time data insights. With a focus on user-friendliness and performance, this project showcases my ability to create visually appealing and efficient applications that enhance financial management",
+    url: "https://capital-gold-bank-ngum.vercel.app/",
+    github: "https://github.com/DURUCODES/Capital-Gold-bank.git",
+    image: capitalgold1,
+    date: 2024,
+    tools: ["ReactJs", "Tailwind CSS", " Framer Motion", "Api"],
+    live: <FaInternetExplorer />,
+    git: <FaGithub />,
+  },
+  {
     name: "Multi-step form",
     url: "https://multi-step-form-seven-roan.vercel.app/",
+    date: 2024,
+    github: " https://github.com/DURUCODES/multi-step-form.git",
     image: formimg,
     description:
-      "Multi-step form is an onboarding feature that enables users to complete their information in smaller chunks which creates a positive user experience & increase conversion.",
+      "Created a versatile multi-form application as part of a free project for Frontend Mentor, utilizing ReactJS and the useContext hook for efficient state management. This application streamlines user input across multiple forms, enhancing the overall user experience. The design emphasizes responsiveness and usability, demonstrating my ability to implement effective solutions that meet user needs while adhering to modern development practices.",
+    tools: ["ReactJs", "Tailwind CSS", " Context Api", "React Hooks"],
+    live: <FaInternetExplorer />,
+    git: <FaGithub />,
   },
   {
     name: "Country Api",
     url: "https://testmy-api-n5x5.vercel.app/",
+    github: "https://github.com/DURUCODES/testmyApi.git",
     image: country,
     description:
-      "This is an educational platform that provides quick and useful infomation about countries in the world through search and filtering.",
+      "Country Explorer is an informative and interactive platform that brings the world’s countries to your fingertips. Built with React and powered by a dynamic API, this tool allows users to quickly access detailed, up-to-date information about any country, from geographical facts to population data, languages, and more.",
+    date: 2024,
+    tools: ["ReactJs", "Vanilla CSS", " Context Api"],
+    live: <FaInternetExplorer />,
+    git: <FaGithub />,
   },
   {
-    name: "E-commerce",
-    url: "https://new-ecommerce-35qd2sidr-goldenboycodecreators-projects.vercel.app/",
+    name: "E-Shop",
+    github: "https://github.com/DURUCODES/-new.-ecommerce.git",
+    url: "https://new-ecommerce-green.vercel.app/",
+    description:
+      "E-Shop  is a sleek and user-friendly e-commerce platform designed with React.js and Tailwind CSS to provide a seamless shopping experience. With intuitive navigation, a responsive design, and fast performance, ShopEase ensures that shopping online is as enjoyable as it is easy. Whether you're browsing through the latest trends or checking out with just a few clicks, every step is optimized for convenience. ",
     image: ecom,
+    date: 2024,
+    tools: ["ReactJs", "Tailwind CSS", "Redux"],
+    live: <FaInternetExplorer />,
+    git: <FaGithub />,
   },
 ];

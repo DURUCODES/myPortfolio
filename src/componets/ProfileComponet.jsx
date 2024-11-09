@@ -13,13 +13,16 @@ const ProfileComponet = () => {
   };
   return (
     <div
-      className="border rounded-xl  flex flex-col p-8 md:items-center shadow"
+      className="border rounded-xl  flex flex-col p-2 md:items-center shadow"
       style={{ backgroundColor: "#0D1117" }}
     >
       <div className="flex flex-row md:flex-col md:items-start items-center justify-between  ">
-        <div className="flex px-2 md:flex-col">
-          <div className=" rounded-xl mr-4">
-            <img src={mypic} className=" h-24 md:h-40  w-full rounded-full " />
+        <div className="flex  group-aria-selected:space-x-8 md:flex-col">
+          <div className=" h-24 md:h-40  mr-4 rounded-xl ">
+            <img
+              src={mypic}
+              className=" h-24 md:h-40 w-[100px] md:w-full rounded-full object-fill "
+            />
           </div>
           <div className="py-2">
             <h1 className="text-2xl font-bold my-2 text-white">
@@ -52,6 +55,21 @@ const ProfileComponet = () => {
               <p className="text-gray-500 font-semibold text-sm">Email</p>
               <span className="text-xs cursor-pointer text-white">
                 rockyduruchukwu@gmail.com
+              </span>
+            </div>
+          </div>
+
+          <div className="flex items-center my-4">
+            <span
+              className=" p-1  rounded mr-2"
+              style={{ backgroundColor: "#202022", color: "#fbbf24" }}
+            >
+              <CiMail className="text-2xl" />
+            </span>
+            <div>
+              <p className="text-gray-500 font-semibold text-sm">Phone</p>
+              <span className="text-xs cursor-pointer text-white">
+                +234 (0) 8081655227
               </span>
             </div>
           </div>

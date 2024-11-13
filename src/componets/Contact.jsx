@@ -1,19 +1,23 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import { BsFillSendFill } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
+  const apiKey = import.meta.env.VITE_API_KEY;
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_3rccbam", "template_k3z5dn6", form.current, {
-        publicKey: "RLrh96RcJfyKBGIHo",
-      })
+      .sendForm(
+        "service_9e6k22r",
+        "template_674gm65",
+        form.current,
+        import.meta.env.VITE_API_KEY // Access the key as user_id
+      )
       .then(
         () => {
           toast.success("Message sent successfully!");
@@ -24,6 +28,12 @@ const Contact = () => {
         }
       );
   };
+
+  /* emailjs.send("service_9e6k22r","template_674gm65",{
+from_name: "kingsley",
+from_email: "rockykduruchukwu@gmail.com",
+message: "done",
+}); */
 
   return (
     <div>
@@ -40,7 +50,6 @@ const Contact = () => {
           <a href="https://www.gps.ie/">gps tracker sport</a>
         </iframe>
       </div>
-
       <div className="md:mt-5 mt-3">
         <h1 className="text-2xl font-bold">Contact Form</h1>
         <form ref={form} onSubmit={sendEmail}>
@@ -86,7 +95,7 @@ const Contact = () => {
         pauseOnHover
         draggable
         theme="light"
-      />
+      />{" "}
     </div>
   );
 };

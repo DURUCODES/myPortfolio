@@ -5,7 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMdArrowDropdown } from "react-icons/io";
-
+import { FcPhone } from "react-icons/fc";
 const ProfileComponet = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleInfo = () => {
@@ -68,7 +68,7 @@ const ProfileComponet = () => {
               className=" p-1  rounded mr-2"
               style={{ backgroundColor: "#202022", color: "#fbbf24" }}
             >
-              <CiMail className="text-2xl" />
+              <FcPhone className="text-2xl" />
             </span>
             <div>
               <p className="text-gray-500 font-semibold text-sm">Phone</p>

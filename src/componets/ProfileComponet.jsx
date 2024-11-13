@@ -54,7 +54,7 @@ const ProfileComponet = () => {
             <div>
               <p className="text-gray-500 font-semibold text-sm">Email</p>
               <span className="text-xs cursor-pointer text-white">
-                rockyduruchukwu@gmail.com
+                kingsleychiduruchukwu@gmail.com
               </span>
             </div>
           </div>
@@ -81,10 +81,22 @@ const ProfileComponet = () => {
               <CiLinkedin />
             </span>
             <span>
-              <FaGithub />
+              <a
+                href="https://github.com/DURUCODES"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
             </span>
             <span>
-              <FaXTwitter />
+              <a
+                href="  https://x.com/kaymillarocky"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaXTwitter />
+              </a>
             </span>
           </div>
         </div>

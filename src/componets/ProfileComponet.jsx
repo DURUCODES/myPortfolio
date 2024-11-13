@@ -11,6 +11,7 @@ const ProfileComponet = () => {
   const toggleInfo = () => {
     setIsOpen((prev) => !prev); // Toggle the state
   };
+
   return (
     <div
       className="border rounded-xl  flex flex-col p-2 md:items-center shadow"
@@ -53,9 +54,12 @@ const ProfileComponet = () => {
             </span>
             <div>
               <p className="text-gray-500 font-semibold text-sm">Email</p>
-              <span className="text-xs cursor-pointer text-white">
+              <a
+                className="text-xs cursor-pointer text-white"
+                href="mailto: kingsleychiduruchukwu@gmail.com?subject=Inquiry&body=Hello, ..."
+              >
                 kingsleychiduruchukwu@gmail.com
-              </span>
+              </a>
             </div>
           </div>
 

@@ -1,6 +1,7 @@
 import formimg from "../assets/image/form.png";
 import country from "../assets/image/country.png";
 import ecom from "../assets/image/shop.png";
+import movie from "../assets/image/mov.png";
 import capitalgold1 from "../assets/image/capitalgold1.png";
 import { FaInternetExplorer } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -15,6 +16,19 @@ export const projectApi = [
     image: capitalgold1,
     date: 2024,
     tools: ["ReactJs", "Tailwind CSS", " Framer Motion", "Api"],
+    live: <FaInternetExplorer />,
+    git: <FaGithub />,
+  },
+
+  {
+    name: "Movie Hub",
+    description:
+      "I developed a dynamic movie streaming web application using ReactJS, which integrates with The Movie Database (TMDb) API to display trending and popular films and TV shows. The application features a user-friendly interface that enables users to easily search for a wide variety of movies and shows, enhancing their overall viewing experience. Emphasizing responsiveness and accessibility, this project showcases my ability to create engaging and functional web applications tailored to meet user needs",
+    url: "https://moviehub-olive.vercel.app/",
+    github: "https://github.com/DURUCODES/-movie-site-react",
+    image: movie,
+    date: 2024,
+    tools: ["ReactJs", "Tailwind CSS", " (TMDb) API"],
     live: <FaInternetExplorer />,
     git: <FaGithub />,
   },
